@@ -16,7 +16,10 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "!dist/__test__/"],
+  "files": [
+    "dist",
+    "!dist/__test__/"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "clean": "rm -rf ./dist && tsc --build --clean",
@@ -29,16 +32,16 @@
     "test:update": "vitest --run --passWithNoTests --update"
   },
   "dependencies": {
-    "@fern-api/csharp-dynamic-snippets": "0.0.5",
-    "@fern-api/dynamic-ir-sdk": "61.4.0",
-    "@fern-api/go-dynamic-snippets": "0.0.16",
-    "@fern-api/java-dynamic-snippets": "0.0.4",
-    "@fern-api/php-dynamic-snippets": "0.0.6",
-    "@fern-api/python-dynamic-snippets": "0.0.6",
-    "@fern-api/ruby-dynamic-snippets": "0.0.1",
+    "@fern-api/csharp-dynamic-snippets": "2.66.8",
+    "@fern-api/dynamic-ir-sdk": "67.2.0",
+    "@fern-api/go-dynamic-snippets": "1.44.0",
+    "@fern-api/java-dynamic-snippets": "4.9.0",
+    "@fern-api/php-dynamic-snippets": "2.10.7",
+    "@fern-api/python-dynamic-snippets": "5.14.11",
+    "@fern-api/ruby-dynamic-snippets": "1.13.1",
     "@fern-api/snippets-core": "0.1.11",
     "@fern-api/swift-dynamic-snippets": "0.1.1",
-    "@fern-api/typescript-dynamic-snippets": "0.0.9",
+    "@fern-api/typescript-dynamic-snippets": "3.71.4",
     "@types/lodash-es": "^4.17.12",
     "lodash-es": "^4.17.21",
     "openapi-types": "^12.1.3"
